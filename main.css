@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  color: #f5f5f5;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background Video */
+#bg-video {
+  
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+
+/* Navbar */
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  
+}
+/*
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}*/
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #b0ff8e;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+
+nav a {
+  color: #b0ff8e;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Intro */
+.intro {
+  max-width: 90%;
+  margin: 40px auto;
+  font-size: 1.3rem;
+  text-align: justify;
+  color: #ccc;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 150px auto;
+  max-width: 90%;
+}
+
+.profile img {
+  width: 280px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.profile .text {
+  max-width: 1000px;
+}
+
+.profile .text h1 {
+  font-size: 7rem;
+  color: #f9d3b4;
+}
+
+.profile .text h2 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.profile .text p {
+  font-size: 1.2rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+/*
+.background-image-section {
+  height: 150vh;
+  background-image: url('./page2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
+
+.background-image-section {
+  height: 100vh;
+  background-image: url('./page2.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.footer-text {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark translucent background */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Font scaling for larger phones and tablets */
+.footer-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.footer-text h3 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+        .video-showcase {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 3rem;
+        }
+    }
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-text h1 {
+    font-size: 2rem;
+  }
+
+  .footer-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .background-image-section {
+    padding: 20px;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .footer-text h3 {
+    font-size: 0.9rem;
+  }
+
+  .footer-text {
+    padding: 15px;
+  }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+  }
+
+  nav.show {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .profile img {
+    width: 180px;
+  }
+
+  .profile .text h1 {
+    font-size: 2.5rem;
+  }
+
+  .profile .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile .text p {
+    font-size: 1rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+}
+
+
